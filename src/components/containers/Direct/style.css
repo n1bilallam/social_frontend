@@ -1,0 +1,13 @@
+.direct {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color: #dadbd3;
+  padding: 40px 0;
+}
+.direct__body {
+  display: flex;
+  background-color: #ededed;
+  height: 90vh;
+  width: 100vw;
+}
