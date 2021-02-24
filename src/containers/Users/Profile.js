@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../Layout";
+import Layout from "../../components/Layout";
 import { makeStyles, withStyles } from "@material-ui/core/styles";
 
 import Grid from "@material-ui/core/Grid";
@@ -9,7 +9,8 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import tileData from "../../pictures/logo-insta.png";
 import { Link } from "react-router-dom";
 import Badge from "@material-ui/core/Badge";
-
+import FavoriteIcon from "@material-ui/icons/Favorite";
+import ChatBubbleIcon from "@material-ui/icons/ChatBubble";
 const StyledBadge = withStyles((theme) => ({
   badge: {
     backgroundColor: "#44b700",
@@ -57,7 +58,22 @@ const useStyles = makeStyles((theme) => ({
   pic: {
     width: "100%",
     height: "100%",
+    // opacity:"1",
+    // display:'block',
+    // transition:'.5s ease',
+    // backfaceVisibility:"hidden"
   },
+
+  // middle:{
+  //   transition:'.5s ease',
+  //   opacity:"0",
+  //   position:"absolute",
+  //   top:"50%",
+  //   left:"50%",
+  //   transform: "translate(-50%, -50%)",
+  //   textAlign: "center",
+  // }
+
   paper: {
     width: 300,
     height: 300,
@@ -207,6 +223,10 @@ const Profile = (props) => {
                 <Grid item>
                   <div className={classes.paper} square>
                     <img className={classes.pic} src={tileData} />
+                    <div>
+                      <FavoriteIcon />
+                      <ChatBubbleIcon />
+                    </div>
                   </div>
                 </Grid>
               </Grid>

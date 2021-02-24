@@ -38,7 +38,7 @@ const Signup = (props) => {
     password: "",
   });
   const { fullName, userName, email, password } = formData;
-  //Handle change from inputs
+  // Handle change from inputs
   const handleChange = (text) => (e) => {
     setFormData({ ...formData, [text]: e.target.value });
   };

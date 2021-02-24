@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import { makeStyles } from "@material-ui/core/styles";
 import { Paper, Grid, TextField, Button, Hidden } from "@material-ui/core";
 import instaLogo from "../../pictures/logo-insta.png";
@@ -155,6 +154,7 @@ const Signin = (props) => {
                     color: "#3C5898",
                     textDecoration: "none",
                   }}
+                  to={"/forgetPassword"}
                 >
                   Forget password ?
                 </Link>

@@ -1,7 +1,7 @@
 import { Avatar, IconButton } from "@material-ui/core";
 import { Chat, DonutLarge, MoreVert, Search } from "@material-ui/icons";
 import React from "react";
-import Layout from "../../../Layout";
+// import Layout from "../../../components/Layout";
 import SidebarChat from "../SidebarChat";
 
 import "./style.css";
